@@ -12,6 +12,7 @@
 		2144B7F429E9A49B00E90DCC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2144B7F329E9A49B00E90DCC /* Preview Assets.xcassets */; };
 		2144B7FB29E9A50200E90DCC /* JokeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2144B7FA29E9A50200E90DCC /* JokeView.swift */; };
 		2144B7FE29E9A94E00E90DCC /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2144B7FD29E9A94E00E90DCC /* Joke.swift */; };
+		21996CEC29E9AF1D00045DF9 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21996CEB29E9AF1D00045DF9 /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		2144B7F329E9A49B00E90DCC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2144B7FA29E9A50200E90DCC /* JokeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeView.swift; sourceTree = "<group>"; };
 		2144B7FD29E9A94E00E90DCC /* Joke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
+		21996CEB29E9AF1D00045DF9 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,8 +84,17 @@
 			isa = PBXGroup;
 			children = (
 				2144B7FD29E9A94E00E90DCC /* Joke.swift */,
+				21996CEA29E9AF0600045DF9 /* Services */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		21996CEA29E9AF0600045DF9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				21996CEB29E9AF1D00045DF9 /* NetworkService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +169,7 @@
 			files = (
 				2144B7ED29E9A49800E90DCC /* RandomJokeApp.swift in Sources */,
 				2144B7FB29E9A50200E90DCC /* JokeView.swift in Sources */,
+				21996CEC29E9AF1D00045DF9 /* NetworkService.swift in Sources */,
 				2144B7FE29E9A94E00E90DCC /* Joke.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
