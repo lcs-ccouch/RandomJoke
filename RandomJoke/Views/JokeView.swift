@@ -14,8 +14,18 @@ struct JokeView: View {
                 Text("joke goes here")
                     .font(.title)
                     .multilineTextAlignment(.center)
+                
+                Button(action: {
+                    
+                }, label: {
+                    Image(systemName: "arrow.down.cricle.fill")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 40)
+                        .tint(.black)
+                })
+                .navigationTitle("Random Jokes")
             }
-            .navigationTitle("Random Jokes")
         }
     }
 }
