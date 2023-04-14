@@ -6,8 +6,10 @@
 //
 
 import SwiftUI
-
+// MARK:     stored properties
 struct JokeView: View {
+    @State var punchlineOpacity = 0.0
+    // MARK: computed properties
     var body: some View {
         NavigationView {
             VStack{
@@ -16,16 +18,23 @@ struct JokeView: View {
                     .multilineTextAlignment(.center)
                 
                 Button(action: {
-                    
+                    withAnimation(.easeIn(duration: 1.0)) {
+                        punchlineOpacity = 1.0
+                    }
                 }, label: {
-                    Image(systemName: "arrow.down.cricle.fill")
+                    Image(systemName: "arrow.down.circle.fill")
                         .resizable()
                         .scaledToFit()
                         .frame(width: 40)
                         .tint(.black)
                 })
-                .navigationTitle("Random Jokes")
+                Text("funny part goes here")
+                    .font(.title)
+                    .multilineTextAlignment(.center)
+                    .opacity(punchlineOpacity)
+                
             }
+            .navigationTitle("Random Jokes")
         }
     }
 }
