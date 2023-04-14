@@ -12,3 +12,6 @@ struct Joke: Identifiable {
     let punchline: String
     let id: Int
 }
+
+    let exampleJoke1 = Joke(type: "general", setup: "How much does a hipster weight", punchline: "An instagram", id: 174)
+

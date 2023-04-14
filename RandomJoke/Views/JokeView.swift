@@ -9,11 +9,13 @@ import SwiftUI
 // MARK:     stored properties
 struct JokeView: View {
     @State var punchlineOpacity = 0.0
+    // example joke
+    @State var Joke = exampleJoke1
     // MARK: computed properties
     var body: some View {
         NavigationView {
             VStack{
-                Text("joke goes here")
+                Text(exampleJoke1.setup)
                     .font(.title)
                     .multilineTextAlignment(.center)
                 
@@ -28,7 +30,7 @@ struct JokeView: View {
                         .frame(width: 40)
                         .tint(.black)
                 })
-                Text("funny part goes here")
+                Text(exampleJoke1.punchline)
                     .font(.title)
                     .multilineTextAlignment(.center)
                     .opacity(punchlineOpacity)
