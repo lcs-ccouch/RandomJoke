@@ -4,14 +4,14 @@
 //
 //  Created by calum couch on 2023-04-14.
 //
-
+import Blackbird
 import Foundation
 struct Joke: Identifiable, Codable {
-    let type: String
-    let setup: String
-    let punchline: String
-    let id: Int
+    @BlackbirdColumn var type: String
+    @BlackbirdColumn   var setup: String
+    @BlackbirdColumn var punchline: String
+    @BlackbirdColumn var id: Int
 }
 
-    let exampleJoke1 = Joke(type: "general", setup: "How much does a hipster weight", punchline: "An instagram", id: 174)
+let exampleJoke1 = Joke(type: "general", setup: "How much does a hipster weight", punchline: "An instagram", id: 174)
 
