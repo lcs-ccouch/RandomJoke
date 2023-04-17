@@ -14,6 +14,7 @@
 		2144B7FE29E9A94E00E90DCC /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2144B7FD29E9A94E00E90DCC /* Joke.swift */; };
 		218FDF5529EDC278005936E1 /* Blackbird in Frameworks */ = {isa = PBXBuildFile; productRef = 218FDF5429EDC278005936E1 /* Blackbird */; };
 		218FDF5729EDC384005936E1 /* Joke.db in Resources */ = {isa = PBXBuildFile; fileRef = 218FDF5629EDC384005936E1 /* Joke.db */; };
+		218FDF5A29EDC45E005936E1 /* AppDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218FDF5929EDC45E005936E1 /* AppDatabase.swift */; };
 		21996CEC29E9AF1D00045DF9 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21996CEB29E9AF1D00045DF9 /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		2144B7FA29E9A50200E90DCC /* JokeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeView.swift; sourceTree = "<group>"; };
 		2144B7FD29E9A94E00E90DCC /* Joke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
 		218FDF5629EDC384005936E1 /* Joke.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = Joke.db; path = RandomJoke/Joke.db; sourceTree = SOURCE_ROOT; };
+		218FDF5929EDC45E005936E1 /* AppDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDatabase.swift; sourceTree = "<group>"; };
 		21996CEB29E9AF1D00045DF9 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				2144B7EC29E9A49800E90DCC /* RandomJokeApp.swift */,
+				218FDF5829EDC439005936E1 /* Helpers */,
 				2144B7FC29E9A51000E90DCC /* Views */,
 				2144B7F029E9A49B00E90DCC /* Assets.xcassets */,
 				2144B7F229E9A49B00E90DCC /* Preview Content */,
@@ -82,6 +85,14 @@
 				21996CE929E9ACF700045DF9 /* Models */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		218FDF5829EDC439005936E1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				218FDF5929EDC45E005936E1 /* AppDatabase.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		21996CE929E9ACF700045DF9 /* Models */ = {
@@ -183,6 +194,7 @@
 				2144B7FB29E9A50200E90DCC /* JokeView.swift in Sources */,
 				21996CEC29E9AF1D00045DF9 /* NetworkService.swift in Sources */,
 				2144B7FE29E9A94E00E90DCC /* Joke.swift in Sources */,
+				218FDF5A29EDC45E005936E1 /* AppDatabase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
