@@ -62,6 +62,26 @@ struct JokeView: View {
                 .disabled(punchlineOpacity == 0.0 ? true : false)
                 .buttonStyle(.borderedProminent)
                 
+                Button(action:  {
+                    
+                    Task {
+                        // write database
+                        if let currentJoke = currentJoke {
+                            try await db!.transaction { core in
+                                try core.query("INSERT INTO Joke (id, type, setup, punchline) VALUES (?, ?, ?, ?)",
+                                               currentJoke.id,
+                                               currentJoke.type,
+                                               currentJoke.setup,
+                                               currentJoke.punchline)
+                            }
+                            
+                        }
+                    }
+                }, label: {
+                    Text("Save for later")
+                })
+                .buttonStyle(.borderedProminent)
+                
                 
             }
             .navigationTitle("Random Jokes")
