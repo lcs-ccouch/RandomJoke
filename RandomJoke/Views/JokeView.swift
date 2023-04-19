@@ -3,10 +3,13 @@
 //  RandomJoke
 //
 //  Created by calum couch on 2023-04-14.
-
+import Blackbird
 import SwiftUI
+
 // MARK:     stored properties
 struct JokeView: View {
+    // Access the connection to the database (needed to add a new record)
+    @Environment(\.blackbirdDatabase) var db: Blackbird.Database?
     @State var punchlineOpacity = 0.0
     // example joke
     @State var currentJoke: Joke?
@@ -41,11 +44,11 @@ struct JokeView: View {
                     ProgressView()
                 }
                 Spacer()
-               
+                
                 Button(action: {
                     // Reset the interface
                     punchlineOpacity = 0.0
-
+                    
                     Task {
                         // Get another joke
                         withAnimation {
@@ -58,7 +61,7 @@ struct JokeView: View {
                 })
                 .disabled(punchlineOpacity == 0.0 ? true : false)
                 .buttonStyle(.borderedProminent)
-               	
+                
                 
             }
             .navigationTitle("Random Jokes")
@@ -67,11 +70,12 @@ struct JokeView: View {
         }
         
     }
-        
+    
 }
 
 struct JokeView_Previews: PreviewProvider {
     static var previews: some View {
         JokeView()
+            .environment(\.blackbirdDatabase, AppDatabase.instance)
     }
 }
