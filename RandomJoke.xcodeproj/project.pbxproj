@@ -13,9 +13,9 @@
 		2144B7FB29E9A50200E90DCC /* JokeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2144B7FA29E9A50200E90DCC /* JokeView.swift */; };
 		2144B7FE29E9A94E00E90DCC /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2144B7FD29E9A94E00E90DCC /* Joke.swift */; };
 		218FDF5529EDC278005936E1 /* Blackbird in Frameworks */ = {isa = PBXBuildFile; productRef = 218FDF5429EDC278005936E1 /* Blackbird */; };
-		218FDF5729EDC384005936E1 /* Joke.db in Resources */ = {isa = PBXBuildFile; fileRef = 218FDF5629EDC384005936E1 /* Joke.db */; };
+		218FDF5729EDC384005936E1 /* db.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 218FDF5629EDC384005936E1 /* db.sqlite */; };
 		218FDF5A29EDC45E005936E1 /* AppDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218FDF5929EDC45E005936E1 /* AppDatabase.swift */; };
-		218FDF5C29EDC593005936E1 /* FavourtiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218FDF5B29EDC593005936E1 /* FavourtiesView.swift */; };
+		218FDF5E29EDC7DE005936E1 /* FavouritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218FDF5D29EDC7DE005936E1 /* FavouritesView.swift */; };
 		21996CEC29E9AF1D00045DF9 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21996CEB29E9AF1D00045DF9 /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,9 +26,9 @@
 		2144B7F329E9A49B00E90DCC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2144B7FA29E9A50200E90DCC /* JokeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeView.swift; sourceTree = "<group>"; };
 		2144B7FD29E9A94E00E90DCC /* Joke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
-		218FDF5629EDC384005936E1 /* Joke.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = Joke.db; path = RandomJoke/Joke.db; sourceTree = SOURCE_ROOT; };
+		218FDF5629EDC384005936E1 /* db.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = db.sqlite; path = RandomJoke/db.sqlite; sourceTree = SOURCE_ROOT; };
 		218FDF5929EDC45E005936E1 /* AppDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDatabase.swift; sourceTree = "<group>"; };
-		218FDF5B29EDC593005936E1 /* FavourtiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavourtiesView.swift; sourceTree = "<group>"; };
+		218FDF5D29EDC7DE005936E1 /* FavouritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesView.swift; sourceTree = "<group>"; };
 		21996CEB29E9AF1D00045DF9 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,8 +83,8 @@
 		2144B7FC29E9A51000E90DCC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				218FDF5D29EDC7DE005936E1 /* FavouritesView.swift */,
 				2144B7FA29E9A50200E90DCC /* JokeView.swift */,
-				218FDF5B29EDC593005936E1 /* FavourtiesView.swift */,
 				21996CE929E9ACF700045DF9 /* Models */,
 			);
 			path = Views;
@@ -101,7 +101,7 @@
 		21996CE929E9ACF700045DF9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				218FDF5629EDC384005936E1 /* Joke.db */,
+				218FDF5629EDC384005936E1 /* db.sqlite */,
 				2144B7FD29E9A94E00E90DCC /* Joke.swift */,
 				21996CEA29E9AF0600045DF9 /* Services */,
 			);
@@ -180,7 +180,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				218FDF5729EDC384005936E1 /* Joke.db in Resources */,
+				218FDF5729EDC384005936E1 /* db.sqlite in Resources */,
 				2144B7F429E9A49B00E90DCC /* Preview Assets.xcassets in Resources */,
 				2144B7F129E9A49B00E90DCC /* Assets.xcassets in Resources */,
 			);
@@ -193,11 +193,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				218FDF5C29EDC593005936E1 /* FavourtiesView.swift in Sources */,
 				2144B7ED29E9A49800E90DCC /* RandomJokeApp.swift in Sources */,
 				2144B7FB29E9A50200E90DCC /* JokeView.swift in Sources */,
 				21996CEC29E9AF1D00045DF9 /* NetworkService.swift in Sources */,
 				2144B7FE29E9A94E00E90DCC /* Joke.swift in Sources */,
+				218FDF5E29EDC7DE005936E1 /* FavouritesView.swift in Sources */,
 				218FDF5A29EDC45E005936E1 /* AppDatabase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
